@@ -1,0 +1,42 @@
+/* header.component.css */
+mat-toolbar {
+  background-color: #2196f3;
+  color: white;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-form-field {
+  width: 200px;
+  margin: 0 10px;
+}
+
+button {
+  color: white;
+  margin-left: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 64px; /* Adds padding to content so it doesn’t overlap with header */
+}

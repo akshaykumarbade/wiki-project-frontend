@@ -1,7 +1,7 @@
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter, RouterModule } from '@angular/router';
 
-import { routes } from './app.routes';
+import { appRoutes } from './app.routes';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
@@ -18,7 +18,7 @@ export const appConfig: ApplicationConfig = {
       MatFormFieldModule,
       MatInputModule,
       ReactiveFormsModule,
-      RouterModule.forRoot(routes)
+      RouterModule.forRoot(appRoutes)
     )
   ]
 };

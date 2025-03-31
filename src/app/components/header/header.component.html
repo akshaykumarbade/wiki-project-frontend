@@ -1,0 +1,13 @@
+<mat-toolbar>
+  <span class="logo">Wiki Website</span>
+  <span class="spacer"></span>
+  <mat-form-field appearance="outline">
+    <mat-label>Search Articles</mat-label>
+    <input matInput placeholder="Enter title..." [(ngModel)]="searchQuery" (keyup.enter)="searchArticles()">
+  </mat-form-field>
+  <button mat-icon-button (click)="navigateToProfile()">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <button mat-button (click)="navigateToHome()">Home</button>
+  <button mat-button (click)="navigateToArticles()">Articles</button>
+</mat-toolbar>

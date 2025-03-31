@@ -1,0 +1,21 @@
+mat-card {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #f1f8e9;
+    color: #33691e;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #33691e;
+    color: white;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
