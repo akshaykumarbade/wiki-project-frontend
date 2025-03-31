@@ -1,0 +1,13 @@
+<p>article works!</p>
+<mat-card>
+    <h2>Create Article</h2>
+    <form [formGroup]="articleForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <input matInput placeholder="Title" formControlName="title">
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput placeholder="Content" formControlName="content"></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Save</button>
+    </form>
+</mat-card>
