@@ -6,6 +6,7 @@ import { ArticleListComponent } from './components/article-list/article-list.com
 import { ProfileComponent } from './components/profile/profile.component';
 import { HomeComponent } from './components/home/home.component';
 import { ArticleComponent } from './components/article/article.component';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 export const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,6 +16,8 @@ export const appRoutes: Routes = [
     { path: 'articles', component: ArticleListComponent },
     { path: 'articles/new', component: ArticleComponent },
     { path: 'profile', component: ProfileComponent },
+    { path: 'edit-profile', component: EditProfileComponent },
+    { path: 'article/:id', component: ArticleComponent },
 ];
 
 @NgModule({
